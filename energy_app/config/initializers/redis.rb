@@ -1,0 +1,1 @@
+$redis = Redis.new(:host => "ec2-54-213-124-3.us-west-2.compute.amazonaws.com", :port => 6379)

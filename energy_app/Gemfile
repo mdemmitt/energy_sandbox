@@ -34,6 +34,11 @@ end
 
 gem 'puma'
 
+gem 'aws-sdk'
+
+gem 'redis'
+gem 'redis-namespace'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

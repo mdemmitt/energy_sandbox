@@ -1,2 +1,7 @@
 <h1>Energy#index</h1>
-<p>Find me in app/views/energy/index.html.erb</p>
+<p>Redis Keys</p>
+<ul>
+  <% @keys.each do |key| %>
+    <li>Key=<%= key %> Value=<%= $redis.get(key)%>
+  <% end %>
+</ul>
