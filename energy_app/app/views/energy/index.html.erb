@@ -2,6 +2,6 @@
 <p>Redis Keys</p>
 <ul>
   <% @keys.each do |key| %>
-    <li>Key=<%= key %> Value=<%= $redis.get(key)%>
+    <li>Key=<%= key %> Value=$redis.get(key).inspect</li>
   <% end %>
 </ul>
