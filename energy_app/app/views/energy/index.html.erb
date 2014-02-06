@@ -1,7 +1,17 @@
 <h1>Energy#index</h1>
 <p>Redis Keys</p>
 <ul>
-  <% @keys.each do |key| %>
-    <li>Key=<%= key %> Value=$redis.get(key).inspect</li>
+  <% @types.each do |type| %>
+    <li>Type=<%= type %></li>
+  <% end %>
+</ul>
+<ul>
+  <% @stringKeys.each do |key| %>
+    <li>Key=<%= key %> Value=<%= $redis.get(key) %></li>
+  <% end %>
+</ul>
+<ul>
+  <% @hashKeys.each do |key| %>
+    <li>Key=<%= key %></li>
   <% end %>
 </ul>
